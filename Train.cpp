@@ -1,6 +1,10 @@
 #include "Train.h"
 #include <chrono>
 
+mutex maint_mtx;
+mutex iron_mtx;
+mutex wood_mtx;
+
 Train::Train(TrainType type, bool needIronLoad, bool needWoodLoad, bool needMaintenance):
     train_type(type),
     iron_supply(needIronLoad),
@@ -8,9 +12,8 @@ Train::Train(TrainType type, bool needIronLoad, bool needWoodLoad, bool needMain
     need_maintenance(needMaintenance)
 {
     state = ARRIVE;
-    thread train_thread(Train::trainThread);
+    train_thread = new thread(&Train::trainThread, this);
 
-    train_thread.join();
     this->train_name = this->getType();
 }
 
@@ -53,17 +56,21 @@ void Train::changeState()
 
     case MAINTENANCE:
         cout << "Train " << train_name << " waiting for maintance" << endl;
+
         maint_mtx.lock();
 
         cout << "Train " << train_name << " in maintance" << endl;
+
         if(train_type == FAST)
             time_sleep = 2;
         else
-            this_thread::sleep_for(chrono::seconds(1));
+            time_sleep = 1;
+        this_thread::sleep_for(chrono::seconds(time_sleep));
+        cout << "Train " << train_name << " finished maintance in " << time_sleep << " seconds" << endl;
         state = WAIT_SUPPLY;
+        
         maint_mtx.unlock();
 
-        cout << "Train " << train_name << " finished maintance in " <<  << endl;
         this->changeState();
         break;
     
@@ -76,28 +83,44 @@ void Train::changeState()
         break;
 
     case LOAD_IRON:
-        iron_mtx.lock();
-        if(train_type == MEDIUM)
-            this_thread::sleep_for(chrono::seconds(6));
-        else
-            this_thread::sleep_for(chrono::seconds(3));
+        cout << "Train " << train_name << " waiting for iron supply" << endl;
         
+        iron_mtx.lock();
+        
+        cout << "Train " << train_name << " in filling up with iron" << endl;
+
+        if(train_type == MEDIUM)
+            time_sleep = 6;
+        else
+            time_sleep = 3;
+        
+        this_thread::sleep_for(chrono::seconds(time_sleep));
+        cout << "Train " << train_name << " finished iron supply in " << time_sleep << " seconds" << endl;
+
         state = LEAVE;
         iron_mtx.unlock();
         this->changeState();
         break;
 
     case LOAD_WOOD:
+        cout << "Train " << train_name << " waiting for wood supply" << endl;
+        
         wood_mtx.lock();
+        cout << "Train " << train_name << " in filling up with wood" << endl;
+        
         if(train_type == SLOW)
-            this_thread::sleep_for(chrono::seconds(6));
+            time_sleep = 6;
         else
-            this_thread::sleep_for(chrono::seconds(3));
+            time_sleep = 3;
+
+        this_thread::sleep_for(chrono::seconds(time_sleep));
+        cout << "Train " << train_name << " finished wood supply in " << time_sleep << " seconds" << endl;
+
         
         state = LEAVE;
         if(iron_supply)
         {
-            wood_supply == false;
+            wood_supply = false;
             state = WAIT_SUPPLY;
         }
         wood_mtx.unlock();
@@ -120,7 +143,6 @@ void Train::changeState()
 void Train::trainThread()
 {
     this->changeState();
-    delete this;
 }
 
 string Train::getType()
@@ -131,4 +153,13 @@ string Train::getType()
     case MEDIUM: return "Medium";
     case FAST: return "Fast";
     }
+    return "NONE";
+}
+
+void Train::start()
+{
+    if(train_thread->joinable())
+        train_thread->join();
+    else
+        cout << "Deadline loss" << endl;
 }

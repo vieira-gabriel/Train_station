@@ -6,10 +6,6 @@
 
 using namespace std;
 
-mutex maint_mtx;
-mutex iron_mtx;
-mutex wood_mtx;
-
 enum States
 {
     ARRIVE,
@@ -39,14 +35,16 @@ private:
     bool wood_supply;
     bool need_maintenance;
     string train_name;
+    thread *train_thread;
 
     void changeState();
     void trainThread();
 
 public:
-    Train(TrainType, bool, bool, bool);
+    Train(TrainType type, bool needIronLoad, bool needWoodLoad, bool needMaintenance);
     ~Train();
     States getState();
     string getType();
+    void start();
 
 };
