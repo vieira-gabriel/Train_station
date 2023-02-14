@@ -3,8 +3,11 @@
 #include <string>
 #include <thread>
 #include <mutex>
+#include <map>
 
 using namespace std;
+
+extern mutex maint_mtx, iron_mtx, wood_mtx, output;
 
 enum States
 {
@@ -24,6 +27,7 @@ enum TrainType
     FAST
 };
 
+extern map<TrainType, bool> trainMap;
 class Train
 {
 private:
@@ -34,11 +38,12 @@ private:
     bool iron_supply;
     bool wood_supply;
     bool need_maintenance;
+    bool started;
     string train_name;
-    thread *train_thread;
+    time_t start_time;
+    time_t end_time;
 
     void changeState();
-    void trainThread();
 
 public:
     Train(TrainType type, bool needIronLoad, bool needWoodLoad, bool needMaintenance);
