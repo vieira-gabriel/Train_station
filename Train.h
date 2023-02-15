@@ -3,8 +3,14 @@
 #include <string>
 #include <thread>
 #include <mutex>
+#include <map>
+#include <vector>
 
 using namespace std;
+
+extern mutex g_maint_mtx, g_iron_mtx, g_wood_mtx, g_output, g_priority_mtx;
+extern int g_current_priority;
+extern const int g_multiplier;
 
 enum States
 {
@@ -24,6 +30,8 @@ enum TrainType
     FAST
 };
 
+extern map<TrainType, bool> g_trainMap;
+
 class Train
 {
 private:
@@ -34,11 +42,13 @@ private:
     bool iron_supply;
     bool wood_supply;
     bool need_maintenance;
+    bool started;
     string train_name;
-    thread *train_thread;
+    time_t start_time;
+    time_t end_time;
 
     void changeState();
-    void trainThread();
+    void checkPriority();
 
 public:
     Train(TrainType type, bool needIronLoad, bool needWoodLoad, bool needMaintenance);
