@@ -12,6 +12,8 @@ extern mutex g_maint_mtx, g_iron_mtx, g_wood_mtx, g_output, g_priority_mtx;
 extern int g_current_priority;
 extern const int g_multiplier;
 
+extern map<string, int> g_resourcePriority;
+
 enum States
 {
     ARRIVE,
@@ -31,6 +33,7 @@ enum TrainType
 };
 
 extern map<TrainType, bool> g_trainMap;
+extern map<TrainType, int> g_trainPriority;
 
 class Train
 {
@@ -43,12 +46,16 @@ private:
     bool wood_supply;
     bool need_maintenance;
     bool started;
+    bool loggedStop;
     string train_name;
     time_t start_time;
     time_t end_time;
+    int thisPriority;
 
     void changeState();
     void checkPriority();
+    bool stopByPreemprion(int value);
+    bool stopByCeiling(int value);
 
 public:
     Train(TrainType type, bool needIronLoad, bool needWoodLoad, bool needMaintenance);

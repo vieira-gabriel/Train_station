@@ -7,6 +7,8 @@ mutex g_output;
 mutex g_map_mtx;
 mutex g_priority_mtx;
 map<TrainType, bool> g_trainMap;
+map<string, int> g_resourcePriority;
+map<TrainType, int> g_trainPriority;
 
 const int g_multiplier = 2;
 
@@ -67,6 +69,10 @@ int main(int argc, char const *argv[])
     g_trainMap.insert(make_pair(TrainType::SLOW,false));
     g_trainMap.insert(make_pair(TrainType::MEDIUM,false));
     g_trainMap.insert(make_pair(TrainType::FAST,false));
+
+    g_resourcePriority.insert(make_pair("wood",1));
+    g_resourcePriority.insert(make_pair("iron",2));
+    g_resourcePriority.insert(make_pair("maintenance",2));
     
     cout << "Station ready" << endl;
     do
@@ -79,16 +85,16 @@ int main(int argc, char const *argv[])
         if(difftime(current_time,fast_timer) >= fastT)
         {
             time(&fast_timer);
-            threads.emplace_back(thread(trainArrival,TrainType::FAST,false, true, true));
+            threads.emplace_back(thread(trainArrival,TrainType::FAST, true, false, true));
             ++tests;
-            this_thread::sleep_for(chrono::seconds(10));
+            this_thread::sleep_for(chrono::seconds(16));
         }
 
         time(&current_time);
         if(difftime(current_time,med_timer) >= medT)
         {
             time(&med_timer);
-            threads.emplace_back(thread(trainArrival,TrainType::MEDIUM, true, false, false));
+            threads.emplace_back(thread(trainArrival,TrainType::MEDIUM, true, true, true));
             ++tests;
             this_thread::sleep_for(chrono::seconds(10));
         }
@@ -97,12 +103,12 @@ int main(int argc, char const *argv[])
         if(difftime(current_time,slow_timer) >= slowT)
         {
             time(&slow_timer);
-            threads.emplace_back(thread(trainArrival,TrainType::SLOW, true, true, true));
+            threads.emplace_back(thread(trainArrival,TrainType::SLOW, false, true, false));
             ++tests;
         }
             
 
-        this_thread::sleep_for(chrono::seconds(10));
+        this_thread::sleep_for(chrono::seconds(1));
     } while (tests < maxTests);
 
     for (auto& th : threads)

@@ -1,0 +1,209 @@
+Trains to arrive: 15. Multiplier: 2
+
+Priority 1 Slow train deadline: 100
+Priority 2 Medium train deadline: 160
+Priority 3 Fast train deadline: 200
+
+Station ready
+Inserting Fast to priority map with value 3
+Train Fast enterring station
+Train Fast arrived in 12 seconds.
+   Expected 10 seconds
+Train Fast needs maintenance
+Inserting Medium to priority map with value 2
+Train Fast stoped due to higher priority
+  It's priority: 3. One above: 2
+Train Medium enterring station
+Inserting Slow to priority map with value 1
+Train Medium arrived in 12 seconds.
+   Expected 10 seconds
+Train Slow enterring station
+Train Medium stoped due to higher priority
+  It's priority: 2. One above: 1
+Train Slow arrived in 18 seconds.
+   Expected 16 seconds
+Train Slow don't needs maintenance
+Train Slow waiting for wood supply
+Train Slow in filling up with wood
+Train Slow finished wood supply in 14 seconds.
+   Expected 12 seconds
+Train Slow leaving station. Bye bye! Finished in 44 seconds
+Train Medium needs maintenance
+Train Medium waiting for maintance
+Train Medium in maintance
+Train Medium finished maintance in 4 seconds.
+   Expected 2 seconds
+Train Medium waiting for wood supply
+Train Medium in filling up with wood
+Train Medium finished wood supply in 8 seconds.
+   Expected 6 seconds
+Train Medium waiting for iron supply
+Train Medium in filling up with iron
+Train Medium finished iron supply in 14 seconds.
+   Expected 12 seconds
+Train Medium leaving station. Bye bye! Finished in 91 seconds
+Train Fast waiting for maintance
+Train Fast in maintance
+Train Fast finished maintance in 98 seconds.
+   Expected 4 seconds
+Train Fast waiting for iron supply
+Train Fast in filling up with iron
+Train Fast finished iron supply in 8 seconds.
+   Expected 6 seconds
+Train Slow enterring station
+Train Fast leaving station. Bye bye! Finished in 129 seconds
+Train Slow arrived in 18 seconds.
+   Expected 16 seconds
+Train Slow don't needs maintenance
+Train Slow waiting for wood supply
+Train Slow in filling up with wood
+Train Slow finished wood supply in 14 seconds.
+   Expected 12 seconds
+Train Slow leaving station. Bye bye! Finished in 44 seconds
+Train Medium enterring station
+Train Medium arrived in 12 seconds.
+   Expected 10 seconds
+Train Medium needs maintenance
+Train Medium waiting for maintance
+Train Medium in maintance
+Train Medium finished maintance in 4 seconds.
+   Expected 2 seconds
+Train Medium waiting for wood supply
+Train Medium in filling up with wood
+Train Fast stoped due to higher priority
+  It's priority: 3. One above: 1
+Train Medium finished wood supply in 8 seconds.
+   Expected 6 seconds
+Train Medium waiting for iron supply
+Train Medium in filling up with iron
+Train Medium finished iron supply in 14 seconds.
+   Expected 12 seconds
+Train Medium leaving station. Bye bye! Finished in 51 seconds
+Train Slow enterring station
+Train Slow arrived in 18 seconds.
+   Expected 16 seconds
+Train Slow don't needs maintenance
+Train Slow waiting for wood supply
+Train Slow in filling up with wood
+Train Slow finished wood supply in 14 seconds.
+   Expected 12 seconds
+Train Slow leaving station. Bye bye! Finished in 44 seconds
+Train Fast enterring station
+Train Fast arrived in 80 seconds.
+   Expected 10 seconds
+Train Fast needs maintenance
+Train Fast waiting for maintance
+Train Fast in maintance
+Train Fast finished maintance in 6 seconds.
+   Expected 4 seconds
+Train Fast waiting for iron supply
+Train Fast in filling up with iron
+Train Fast finished iron supply in 8 seconds.
+   Expected 6 seconds
+Train Fast leaving station. Bye bye! Finished in 105 seconds
+Train Slow enterring station
+Train Medium stoped due to higher priority
+  It's priority: 2. One above: 1
+Train Slow arrived in 18 seconds.
+   Expected 16 seconds
+Train Slow don't needs maintenance
+Train Slow waiting for wood supply
+Train Slow in filling up with wood
+Train Slow finished wood supply in 14 seconds.
+   Expected 12 seconds
+Train Slow leaving station. Bye bye! Finished in 44 seconds
+Train Medium enterring station
+Train Medium arrived in 44 seconds.
+   Expected 10 seconds
+Train Medium needs maintenance
+Train Medium waiting for maintance
+Train Medium in maintance
+Train Medium finished maintance in 4 seconds.
+   Expected 2 seconds
+Train Medium waiting for wood supply
+Train Medium in filling up with wood
+Train Medium finished wood supply in 8 seconds.
+   Expected 6 seconds
+Train Medium waiting for iron supply
+Train Medium in filling up with iron
+Train Fast stoped due to higher priority
+  It's priority: 3. One above: 2
+Train Medium finished iron supply in 14 seconds.
+   Expected 12 seconds
+Train Medium leaving station. Bye bye! Finished in 83 seconds
+Train Fast enterring station
+Train Slow enterring station
+Train Fast arrived in 30 seconds.
+   Expected 10 seconds
+Train Fast stoped due to higher priority
+  It's priority: 3. One above: 1
+Train Slow arrived in 18 seconds.
+   Expected 16 seconds
+Train Slow don't needs maintenance
+Train Slow waiting for wood supply
+Train Slow in filling up with wood
+Train Slow finished wood supply in 14 seconds.
+   Expected 12 seconds
+Train Slow leaving station. Bye bye! Finished in 44 seconds
+Train Fast needs maintenance
+Train Fast waiting for maintance
+Train Fast in maintance
+Train Fast finished maintance in 6 seconds.
+   Expected 4 seconds
+Train Fast waiting for iron supply
+Train Fast in filling up with iron
+Train Fast finished iron supply in 8 seconds.
+   Expected 6 seconds
+Train Fast leaving station. Bye bye! Finished in 93 seconds
+Train Medium enterring station
+Train Medium arrived in 12 seconds.
+   Expected 10 seconds
+Train Medium needs maintenance
+Train Medium waiting for maintance
+Train Medium in maintance
+Train Medium finished maintance in 4 seconds.
+   Expected 2 seconds
+Train Medium waiting for wood supply
+Train Medium in filling up with wood
+Train Medium finished wood supply in 8 seconds.
+   Expected 6 seconds
+Train Medium stoped due to higher priority
+  It's priority: 2. One above: 1
+Train Slow enterring station
+Train Slow arrived in 18 seconds.
+   Expected 16 seconds
+Train Slow don't needs maintenance
+Train Slow waiting for wood supply
+Train Slow in filling up with wood
+Train Slow finished wood supply in 14 seconds.
+   Expected 12 seconds
+Train Slow leaving station. Bye bye! Finished in 44 seconds
+Train Medium waiting for iron supply
+Train Medium in filling up with iron
+Train Medium finished iron supply in 56 seconds.
+   Expected 12 seconds
+Train Medium leaving station. Bye bye! Finished in 93 seconds
+Train Fast enterring station
+Train Fast arrived in 12 seconds.
+   Expected 10 seconds
+Train Fast needs maintenance
+Train Fast waiting for maintance
+Train Fast in maintance
+Train Fast finished maintance in 6 seconds.
+   Expected 4 seconds
+Train Fast waiting for iron supply
+Train Fast in filling up with iron
+Train Slow enterring station
+Train Fast finished iron supply in 8 seconds.
+   Expected 6 seconds
+Train Fast stoped due to higher priority
+  It's priority: 3. One above: 1
+Train Slow arrived in 18 seconds.
+   Expected 16 seconds
+Train Slow don't needs maintenance
+Train Slow waiting for wood supply
+Train Slow in filling up with wood
+Train Slow finished wood supply in 14 seconds.
+   Expected 12 seconds
+Train Slow leaving station. Bye bye! Finished in 44 seconds
+Train Fast leaving station. Bye bye! Finished in 75 seconds

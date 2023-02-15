@@ -8,7 +8,19 @@ Train::Train(TrainType type, bool needIronLoad, bool needWoodLoad, bool needMain
     need_maintenance(needMaintenance)
 {
     state = ARRIVE;
+    loggedStop = false;
     this->train_name = this->getType();
+    thisPriority = int(type);
+    
+    map<TrainType, int>::iterator it = g_trainPriority.find(train_type);
+
+    if(it == g_trainPriority.end())
+    {
+        g_output.lock();
+        cout << "Inserting " << train_name << " to priority map with value " << thisPriority << endl;
+        g_output.unlock();
+        g_trainPriority.insert(make_pair(train_type,thisPriority));
+    }
 }
 
 Train::~Train()
@@ -16,25 +28,6 @@ Train::~Train()
 
 void Train::changeState()
 {
-    // #ifdef PRIORITY
-    // if(g_current_priority > (int)train_type)
-    // {
-    //     g_output.lock();
-    //     cout << "\e[1mTrain " << train_name << " Have more priority\e[0m" << endl;
-    //     g_output.unlock();
-
-    //     if(g_current_priority != 4)
-    //         g_priority_mtx.unlock();
-
-    //     g_output.lock();
-    //     cout << "\e[1mChange current priority from " << g_current_priority << " to " << (int)train_type << "\e[0m" << endl;
-    //     g_current_priority = (int)train_type;
-    //     g_output.unlock();
-    //     g_priority_mtx.lock();
-    // }
-    // #endif
-    
-
     time_t startState = time(0);
     int time_sleep = 0;
 
@@ -88,6 +81,9 @@ void Train::changeState()
 
         g_maint_mtx.lock();
 
+        thisPriority = g_resourcePriority.find("maintance")->second;
+        g_trainPriority.find(train_type)->second = thisPriority;
+
         g_output.lock();
         cout << "Train " << train_name << " in maintance" << endl;
         g_output.unlock();
@@ -104,6 +100,8 @@ void Train::changeState()
         state = WAIT_SUPPLY;
         
         g_maint_mtx.unlock();
+        thisPriority = int(train_type);
+        g_trainPriority.find(train_type)->second = thisPriority;
 
         this->changeState();
         break;
@@ -113,6 +111,8 @@ void Train::changeState()
             state = LOAD_WOOD;
         else if(iron_supply)
             state = LOAD_IRON;
+        else
+            state = LEAVE;
             
         this->changeState();
         break;
@@ -123,6 +123,10 @@ void Train::changeState()
         g_output.unlock();
         
         g_iron_mtx.lock();
+
+        thisPriority = g_resourcePriority.find("iron")->second;
+        g_trainPriority.find(train_type)->second = thisPriority;
+
         
         g_output.lock();
         cout << "Train " << train_name << " in filling up with iron" << endl;
@@ -140,6 +144,8 @@ void Train::changeState()
 
         state = LEAVE;
         g_iron_mtx.unlock();
+        thisPriority = int(train_type);
+        g_trainPriority.find(train_type)->second = thisPriority;
         
         this->changeState();
         break;
@@ -150,6 +156,10 @@ void Train::changeState()
         g_output.unlock();
         
         g_wood_mtx.lock();
+        
+        thisPriority = g_resourcePriority.find("wood")->second;
+        g_trainPriority.find(train_type)->second = thisPriority;
+
         g_output.lock();
         cout << "Train " << train_name << " in filling up with wood" << endl;
         g_output.unlock();
@@ -171,6 +181,8 @@ void Train::changeState()
             state = WAIT_SUPPLY;
         }
         g_wood_mtx.unlock();
+        thisPriority = int(train_type);
+        g_trainPriority.find(train_type)->second = thisPriority;
         
         this->changeState();
         break;
@@ -220,51 +232,74 @@ void Train::start()
 void Train::checkPriority()
 {
     bool stop = true;
-    bool logged = false;
 
     do
     {
         this_thread::sleep_for(chrono::seconds(2));
 
-        int other_priority_1 = (int)train_type -1;
-        int other_priority_2 = (int)train_type -2;
-        if(other_priority_1 > 0)
-        {
-            map<TrainType, bool>::iterator it = g_trainMap.find((TrainType)other_priority_1);
+        if(stopByPreemprion((int)train_type -1))
+            continue;
 
-            if(it->second == true)
-            {
-                if(!logged)
-                {
-                    g_output.lock();
-                    cout << "\e[1mTrain " << train_name << " stoped due to higher priority\e[0m" << endl;
-                    g_output.unlock();
-                    
-                    logged = true;
-                }
-                
-                continue;
-            }
-        }
-        if(other_priority_2 > 0)
-        {
-            map<TrainType, bool>::iterator it = g_trainMap.find((TrainType)other_priority_2);
+        if(stopByPreemprion((int)train_type -2))
+            continue;
 
-            if(it->second == true)
-            {
-                if(!logged)
-                {
-                    g_output.lock();
-                    cout << "\e[1mTrain " << train_name << " stoped due to higher priority\e[0m" << endl;
-                    g_output.unlock();
-                    
-                    logged = true;
-                }
-                
-                continue;
-            }
-        }
+        
+        if(stopByCeiling((int)train_type + 1))
+            continue;
+
+        if(stopByCeiling((int)train_type + 2))
+            continue;
+
         stop = false;
     } while (stop);
-    
+
+    loggedStop = false;
+}
+
+bool Train::stopByPreemprion(int value)
+{
+    if(value >= (int)TrainType::SLOW)
+    {
+        map<TrainType, int>::iterator it_priority = g_trainPriority.find((TrainType)value);
+        map<TrainType, bool>::iterator it_train = g_trainMap.find((TrainType)value);
+
+        if(it_train->second && it_priority->second < thisPriority && it_priority != g_trainPriority.end())
+        {
+            if(!loggedStop)
+            {
+                g_output.lock();
+                cout << "\e[1mTrain " << train_name << " stoped due to higher priority\e[0m" << endl;
+                cout << "  \e[1mIt's priority: " << (int)train_type << ". One above: " << it_priority->second << "\e[0m" << endl;
+                g_output.unlock();
+                
+                loggedStop = true;
+            }
+            return true;
+        }
+    }
+    return false;
+}
+
+bool Train::stopByCeiling(int value)
+{
+    if(value <= (int)TrainType::FAST)
+    {
+        map<TrainType, int>::iterator it_priority = g_trainPriority.find((TrainType)value);
+        map<TrainType, bool>::iterator it_train = g_trainMap.find((TrainType)value);
+
+        if(it_train->second && it_priority->second < thisPriority && it_priority != g_trainPriority.end())
+        {
+            if(!loggedStop)
+            {
+                g_output.lock();
+                cout << "\e[1mTrain " << train_name << " stoped due to ceiling priority\e[0m" << endl;
+                cout << "  \e[1mIt's priority: " << (int)train_type << ". One above: " << it_priority->second << "\e[0m" << endl;
+                g_output.unlock();
+                
+                loggedStop = true;
+            }
+            return true;
+        }
+    }
+    return false;
 }
