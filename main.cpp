@@ -7,8 +7,10 @@ mutex g_output;
 mutex g_map_mtx;
 mutex g_priority_mtx;
 map<TrainType, bool> g_trainMap;
+map<string, int> g_resourcePriority;
+map<TrainType, int> g_trainPriority;
 
-const int g_multiplier = 2;
+int g_multiplier;
 
 void trainArrival(TrainType type, bool needIronLoad, bool needWoodLoad, bool needMaintenance)
 {
@@ -17,14 +19,19 @@ void trainArrival(TrainType type, bool needIronLoad, bool needWoodLoad, bool nee
     map<TrainType, bool>::iterator it = g_trainMap.find(type);
     if(it->second == true)
     {
-        cout << "\e[2m" << newTrain.getType() << " Train Deadline loss\e[0m" << endl;
+        #ifdef LOGON
+        cout << "\e[2m Train Deadline loss\e[0m" << endl;
+        #endif
         return;
     }
+
     g_map_mtx.lock();
     it->second = true;
     g_map_mtx.unlock();
 
     newTrain.start();
+
+    newTrain.~Train();
 
     g_map_mtx.lock();
     it->second = false;
@@ -35,8 +42,10 @@ int main(int argc, char const *argv[])
 {
     vector<thread> threads;
 
+    g_multiplier = stoi(string(argv[1]));
+
     int tests = 0;
-    int maxTests = 15;
+    int maxTests = stoi(string(argv[2]));
 
     int slowT = 50 * g_multiplier;
     int medT = 80 * g_multiplier;
@@ -67,6 +76,10 @@ int main(int argc, char const *argv[])
     g_trainMap.insert(make_pair(TrainType::SLOW,false));
     g_trainMap.insert(make_pair(TrainType::MEDIUM,false));
     g_trainMap.insert(make_pair(TrainType::FAST,false));
+
+    g_resourcePriority.insert(make_pair("wood",1));
+    g_resourcePriority.insert(make_pair("iron",2));
+    g_resourcePriority.insert(make_pair("maintenance",2));
     
     cout << "Station ready" << endl;
     do
@@ -79,30 +92,29 @@ int main(int argc, char const *argv[])
         if(difftime(current_time,fast_timer) >= fastT)
         {
             time(&fast_timer);
-            threads.emplace_back(thread(trainArrival,TrainType::FAST,false, true, true));
+            threads.emplace_back(thread(trainArrival,TrainType::FAST, true, false, true));
             ++tests;
-            this_thread::sleep_for(chrono::seconds(10));
+            this_thread::sleep_for(chrono::seconds(2));
         }
 
         time(&current_time);
         if(difftime(current_time,med_timer) >= medT)
         {
             time(&med_timer);
-            threads.emplace_back(thread(trainArrival,TrainType::MEDIUM, true, false, false));
+            threads.emplace_back(thread(trainArrival,TrainType::MEDIUM, true, true, true));
             ++tests;
-            this_thread::sleep_for(chrono::seconds(10));
+            this_thread::sleep_for(chrono::seconds(2));
         }
 
 
         if(difftime(current_time,slow_timer) >= slowT)
         {
             time(&slow_timer);
-            threads.emplace_back(thread(trainArrival,TrainType::SLOW, true, true, true));
+            threads.emplace_back(thread(trainArrival,TrainType::SLOW, false, true, false));
             ++tests;
         }
-            
 
-        this_thread::sleep_for(chrono::seconds(10));
+        this_thread::sleep_for(chrono::seconds(1));
     } while (tests < maxTests);
 
     for (auto& th : threads)

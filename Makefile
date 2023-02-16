@@ -5,6 +5,11 @@ CFLAGS = -g -Wall
 ifeq ($(mode),1)
 	STATIONMODE := -DPRIORITY
 endif
+ifeq ($(mode),2)
+	STATIONMODE := -DPRIORITY -DLOGON
+endif
+
+
 
 all: train.o main.o
 	$(CC) $(STATIONMODE) -o station main.o train.o -lm
