@@ -8,7 +8,7 @@
 
 using namespace std;
 
-extern mutex g_maint_mtx, g_iron_mtx, g_wood_mtx, g_output, g_priority_mtx;
+extern mutex g_maint_mtx, g_iron_mtx, g_wood_mtx, g_output;
 extern int g_current_priority;
 extern int g_multiplier;
 

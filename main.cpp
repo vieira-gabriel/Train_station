@@ -5,7 +5,7 @@ mutex g_iron_mtx;
 mutex g_wood_mtx;
 mutex g_output;
 mutex g_map_mtx;
-mutex g_priority_mtx;
+
 map<TrainType, bool> g_trainMap;
 map<string, int> g_resourcePriority;
 map<TrainType, int> g_trainPriority;

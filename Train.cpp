@@ -249,10 +249,6 @@ void Train::start()
     g_output.lock();
     cout << "\e[1mTrain " << train_name << " leaving station. Bye bye! Finished in " << difftime(this->end_time,this->start_time) << " seconds\e[0m" << endl;
     g_output.unlock();
-    
-    #ifdef PRIORITY
-    g_priority_mtx.unlock();
-    #endif
 }
 
 void Train::checkPriority()
