@@ -1,0 +1,20 @@
+Trains to arrive: 100 of each type. Multiplier: 1
+
+Priority 1 Slow train deadline: 35
+Priority 2 Medium train deadline: 75
+Priority 3 Fast train deadline: 200
+
+Station ready
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m

@@ -1,216 +1,907 @@
-Trains to arrive: 100. Multiplier: 1
+Trains to arrive: 300. Multiplier: 1
 
 Priority 1 Slow train deadline: 50
 Priority 2 Medium train deadline: 80
 Priority 3 Fast train deadline: 100
 
 Station ready
-[1mTrain Fast enterring station[0m
-[1mTrain Medium enterring station[0m
-[1mTrain Slow enterring station[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 64 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 145 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 64 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 55 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 64 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Slow arrived at the station[0m
 [1mTrain Fast stoped due to higher priority[0m
 [1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Slow enterring station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Slow arrived at the station[0m
 [1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
 [1mTrain Medium leaving station. Bye bye! Finished in 88 seconds[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Fast leaving station. Bye bye! Finished in 109 seconds[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Slow enterring station[0m
+[1mTrain Fast continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 139 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
 [1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Medium enterring station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 64 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 55 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 64 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Slow arrived at the station[0m
 [1mTrain Fast stoped due to higher priority[0m
 [1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Medium leaving station. Bye bye! Finished in 86 seconds[0m
-[1mTrain Fast enterring station[0m
-[1mTrain Fast stoped due to higher priority[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Fast leaving station. Bye bye! Finished in 103 seconds[0m
-[1mTrain Slow enterring station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Slow arrived at the station[0m
 [1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Medium enterring station[0m
-[1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Medium leaving station. Bye bye! Finished in 76 seconds[0m
-[1mTrain Fast enterring station[0m
-[1mTrain Medium enterring station[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Fast stoped due to higher priority[0m
-[1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Medium leaving station. Bye bye! Finished in 90 seconds[0m
-[1mTrain Fast stoped due to higher priority[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Fast leaving station. Bye bye! Finished in 141 seconds[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Medium enterring station[0m
-[1mTrain Fast stoped due to higher priority[0m
-[1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
 [1mTrain Medium leaving station. Bye bye! Finished in 88 seconds[0m
-[1mTrain Fast enterring station[0m
+[1mTrain Fast continuing[0m
+[1mTrain Slow arrived at the station[0m
 [1mTrain Fast stoped due to higher priority[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Fast leaving station. Bye bye! Finished in 105 seconds[0m
-[1mTrain Slow enterring station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 139 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
 [1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Medium enterring station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow arrived at the station[0m
 [1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Medium leaving station. Bye bye! Finished in 78 seconds[0m
-[1mTrain Fast enterring station[0m
-[1mTrain Medium enterring station[0m
-[1mTrain Slow enterring station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 64 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 55 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 64 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Slow arrived at the station[0m
 [1mTrain Fast stoped due to higher priority[0m
 [1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Slow arrived at the station[0m
 [1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Medium leaving station. Bye bye! Finished in 90 seconds[0m
-[1mTrain Fast stoped due to higher priority[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Fast leaving station. Bye bye! Finished in 141 seconds[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Medium enterring station[0m
-[1mTrain Fast stoped due to higher priority[0m
-[1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
 [1mTrain Medium leaving station. Bye bye! Finished in 88 seconds[0m
-[1mTrain Fast enterring station[0m
+[1mTrain Fast continuing[0m
+[1mTrain Slow arrived at the station[0m
 [1mTrain Fast stoped due to higher priority[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Fast leaving station. Bye bye! Finished in 105 seconds[0m
-[1mTrain Slow enterring station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 139 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
 [1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Medium enterring station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow arrived at the station[0m
 [1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Medium leaving station. Bye bye! Finished in 78 seconds[0m
-[1mTrain Fast enterring station[0m
-[1mTrain Medium enterring station[0m
-[1mTrain Slow enterring station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 64 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 55 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 64 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Slow arrived at the station[0m
 [1mTrain Fast stoped due to higher priority[0m
 [1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Slow arrived at the station[0m
 [1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Medium leaving station. Bye bye! Finished in 90 seconds[0m
-[1mTrain Fast stoped due to higher priority[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Fast leaving station. Bye bye! Finished in 141 seconds[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Medium enterring station[0m
-[1mTrain Fast stoped due to higher priority[0m
-[1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
 [1mTrain Medium leaving station. Bye bye! Finished in 88 seconds[0m
-[1mTrain Fast enterring station[0m
+[1mTrain Fast continuing[0m
+[1mTrain Slow arrived at the station[0m
 [1mTrain Fast stoped due to higher priority[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Fast leaving station. Bye bye! Finished in 105 seconds[0m
-[1mTrain Slow enterring station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 139 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
 [1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Medium enterring station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow arrived at the station[0m
 [1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Medium leaving station. Bye bye! Finished in 78 seconds[0m
-[1mTrain Fast enterring station[0m
-[1mTrain Medium enterring station[0m
-[1mTrain Slow enterring station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 64 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 55 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 64 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Slow arrived at the station[0m
 [1mTrain Fast stoped due to higher priority[0m
 [1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Slow enterring station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Slow arrived at the station[0m
 [1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Medium leaving station. Bye bye! Finished in 90 seconds[0m
-[1mTrain Fast stoped due to higher priority[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Fast leaving station. Bye bye! Finished in 141 seconds[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Medium enterring station[0m
-[1mTrain Fast stoped due to higher priority[0m
-[1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
 [1mTrain Medium leaving station. Bye bye! Finished in 88 seconds[0m
-[1mTrain Fast enterring station[0m
+[1mTrain Fast continuing[0m
+[1mTrain Slow arrived at the station[0m
 [1mTrain Fast stoped due to higher priority[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Fast leaving station. Bye bye! Finished in 105 seconds[0m
-[1mTrain Slow enterring station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 139 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
 [1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Medium enterring station[0m
-[1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Medium leaving station. Bye bye! Finished in 78 seconds[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Fast arrived at the station[0m
 [1mTrain Fast stoped due to higher priority[0m
-[1mTrain Medium enterring station[0m
-[1mTrain Slow enterring station[0m
+[1mTrain Slow arrived at the station[0m
 [1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Medium leaving station. Bye bye! Finished in 90 seconds[0m
-[1mTrain Fast enterring station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 64 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Slow arrived at the station[0m
 [1mTrain Fast stoped due to higher priority[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Fast leaving station. Bye bye! Finished in 149 seconds[0m
-[1mTrain Slow enterring station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 55 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
 [1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Medium enterring station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 64 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Slow arrived at the station[0m
 [1mTrain Fast stoped due to higher priority[0m
 [1mTrain Medium stoped due to higher priority[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
 [1mTrain Medium leaving station. Bye bye! Finished in 88 seconds[0m
-[1mTrain Fast enterring station[0m
+[1mTrain Fast continuing[0m
+[1mTrain Slow arrived at the station[0m
 [1mTrain Fast stoped due to higher priority[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
-[1mTrain Fast leaving station. Bye bye! Finished in 105 seconds[0m
-[1mTrain Slow enterring station[0m
-[1mTrain Slow leaving station. Bye bye! Finished in 30 seconds[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 139 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 64 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 55 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 64 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 88 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 139 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 64 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 55 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 64 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 88 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 139 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 64 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 55 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 64 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 88 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 139 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 64 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 55 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 64 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 88 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 55 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 64 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 55 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 64 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 88 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 139 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 64 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 55 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 64 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 88 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 139 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium continuing[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 55 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 55 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 55 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 55 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 55 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 55 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 26 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 55 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 55 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 55 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 55 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 55 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast continuing[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 34 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m
+[1mTrain Fast arrived at the station[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 25 seconds[0m

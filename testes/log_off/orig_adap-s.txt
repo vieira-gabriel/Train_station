@@ -1,35 +1,63 @@
-Trains to arrive: 15. Multiplier: 1
+Trains to arrive: 50. Multiplier: 1
 
-Priority 1 Slow train deadline: 50
+Priority 1 Slow train deadline: 30
 Priority 2 Medium train deadline: 50
 Priority 3 Fast train deadline: 60
 
 Station ready
-Train Fast enterring station
-Train Medium enterring station
-Train Slow enterring station
-Train Fast stoped due to higher priority
-Train Medium stoped due to higher priority
-Train Slow leaving station. Bye bye! Finished in 30 seconds
-Train Medium stoped due to higher priority
-Train Slow enterring station
-Train Slow leaving station. Bye bye! Finished in 30 seconds
-Train Medium leaving station. Bye bye! Finished in 90 seconds
-Train Medium enterring station
-Train Fast stoped due to higher priority
-Train Slow enterring station
-Train Medium stoped due to higher priority
-Train Slow leaving station. Bye bye! Finished in 30 seconds
-Train Medium stoped due to higher priority
-Train Slow enterring station
-Train Slow leaving station. Bye bye! Finished in 30 seconds
-Train Medium leaving station. Bye bye! Finished in 90 seconds
-Train Fast leaving station. Bye bye! Finished in 199 seconds
-Train Medium enterring station
-Train Slow enterring station
-Train Medium stoped due to higher priority
-Train Slow leaving station. Bye bye! Finished in 30 seconds
-Train Fast stoped due to higher priority
-Train Medium leaving station. Bye bye! Finished in 60 seconds
-Train Fast enterring station
-Train Fast leaving station. Bye bye! Finished in 47 seconds
+[1mTrain Fast arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Fast stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium arrived at the station[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium stoped due to higher priority[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Slow arrived at the station[0m
+[1mTrain Slow leaving station. Bye bye! Finished in 28 seconds[0m
+[1mTrain Medium leaving station. Bye bye! Finished in 718 seconds[0m
+[1mTrain Fast leaving station. Bye bye! Finished in 769 seconds[0m

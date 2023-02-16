@@ -9,16 +9,20 @@ ifeq ($(mode),2)
 	STATIONMODE := -DPRIORITY -DLOGON
 endif
 
+ifeq ($(limit),1)
+	LIMITATION := -DLIMITED
+endif
+
 
 
 all: train.o main.o
-	$(CC) $(STATIONMODE) -o station main.o train.o -lm
+	$(CC) $(STATIONMODE) $(LIMITATION) -o station main.o train.o -lm
 
 train.o: Train.cpp Train.h
-	$(CC) $(STATIONMODE) -c -o train.o Train.cpp $(CFLAGS)
+	$(CC) $(STATIONMODE) $(LIMITATION) -c -o train.o Train.cpp $(CFLAGS)
 
 main.o: main.cpp Train.h
-	$(CC) $(STATIONMODE) -c -o main.o main.cpp $(CFLAGS)
+	$(CC) $(STATIONMODE) $(LIMITATION) -c -o main.o main.cpp $(CFLAGS)
 
 clean:
 	rm -f *.o

@@ -42,9 +42,7 @@ void Train::changeState()
     switch (state)
     {
     case ARRIVE:
-        g_output.lock();
-        cout << "\e[1mTrain " << train_name << " enterring station\e[0m" << endl;
-        g_output.unlock();
+        time(&this->start_time);
         
         if(train_type == SLOW)
             time_sleep = 8 * g_multiplier;
@@ -219,6 +217,9 @@ void Train::changeState()
             this_thread::sleep_for(chrono::seconds(6));
         else
             this_thread::sleep_for(chrono::seconds(5));
+
+        time(&this->end_time);
+        
         break;
 
     default:
@@ -239,16 +240,14 @@ string Train::getType()
 
 void Train::start()
 {
-    time(&this->start_time);
+    g_output.lock();
+    cout << "\e[1mTrain " << train_name << " arrived at the station\e[0m" << endl;
+    g_output.unlock();
 
     this->changeState();
-
-    time(&this->end_time);
-
-    double time_diff = double(this->end_time - this->start_time);
     
     g_output.lock();
-    cout << "\e[1mTrain " << train_name << " leaving station. Bye bye! Finished in " << time_diff << " seconds\e[0m" << endl;
+    cout << "\e[1mTrain " << train_name << " leaving station. Bye bye! Finished in " << difftime(this->end_time,this->start_time) << " seconds\e[0m" << endl;
     g_output.unlock();
     
     #ifdef PRIORITY
@@ -279,6 +278,9 @@ void Train::checkPriority()
 
         stop = false;
     } while (stop);
+
+    if(loggedStop)
+        cout << "\e[1mTrain " << train_name << " continuing\e[0m" << endl;
 
     loggedStop = false;
 }

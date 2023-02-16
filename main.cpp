@@ -9,6 +9,7 @@ mutex g_priority_mtx;
 map<TrainType, bool> g_trainMap;
 map<string, int> g_resourcePriority;
 map<TrainType, int> g_trainPriority;
+map<TrainType, int> g_trainAttended;
 
 int g_multiplier;
 
@@ -24,9 +25,11 @@ void trainArrival(TrainType type, bool needIronLoad, bool needWoodLoad, bool nee
         #endif
         return;
     }
+    map<TrainType, int>::iterator it_attended = g_trainAttended.find(type);
 
     g_map_mtx.lock();
     it->second = true;
+    it_attended->second += 1;
     g_map_mtx.unlock();
 
     newTrain.start();
@@ -48,10 +51,10 @@ int main(int argc, char const *argv[])
     int maxTests = stoi(string(argv[2]));
 
     int slowT = 50 * g_multiplier;
-    int medT = 80 * g_multiplier;
-    int fastT = 100 * g_multiplier;
+    int medT = 90 * g_multiplier;
+    int fastT = 200 * g_multiplier;
 
-    cout << "Trains to arrive: " << maxTests << ". Multiplier: " << g_multiplier << endl << endl;
+    cout << "Trains to arrive: " << maxTests * 3 << ". Multiplier: " << g_multiplier << endl << endl;
     #ifdef PRIORITY
     cout << "Priority " << TrainType::SLOW ;
     #endif
@@ -69,10 +72,6 @@ int main(int argc, char const *argv[])
     time_t med_timer = time(0) - medT;
     time_t fast_timer = time(0) - fastT;
 
-    srand(time(0));
-    // const int minRange = 1, maxRange = 3;
-
-
     g_trainMap.insert(make_pair(TrainType::SLOW,false));
     g_trainMap.insert(make_pair(TrainType::MEDIUM,false));
     g_trainMap.insert(make_pair(TrainType::FAST,false));
@@ -81,50 +80,64 @@ int main(int argc, char const *argv[])
     g_resourcePriority.insert(make_pair("iron",2));
     g_resourcePriority.insert(make_pair("maintenance",2));
     
+    g_trainAttended.insert(make_pair(TrainType::SLOW,0));
+    g_trainAttended.insert(make_pair(TrainType::MEDIUM,0));
+    g_trainAttended.insert(make_pair(TrainType::FAST,0));
+    
     cout << "Station ready" << endl;
     do
     {
+        int fast_int = g_trainAttended.find(TrainType::FAST)->second;
+        int med_int = g_trainAttended.find(TrainType::MEDIUM)->second;
+        int slow_int = g_trainAttended.find(TrainType::SLOW)->second;
         // int trainToGenerate = minRange + (rand()%maxRange);
         time_t current_time;
         time(&current_time);
 
         time(&current_time);
+        #ifdef LIMITATION
+        if(difftime(current_time,fast_timer) >= fastT && fast_int < maxTests)
+        #else
         if(difftime(current_time,fast_timer) >= fastT)
+        #endif
         {
             time(&fast_timer);
             threads.emplace_back(thread(trainArrival,TrainType::FAST, true, false, true));
-            ++tests;
             this_thread::sleep_for(chrono::seconds(2));
         }
 
         time(&current_time);
+        #ifdef LIMITATION
+        if(difftime(current_time,med_timer) >= medT && med_int < maxTests)
+        #else
         if(difftime(current_time,med_timer) >= medT)
+        #endif
         {
             time(&med_timer);
             threads.emplace_back(thread(trainArrival,TrainType::MEDIUM, true, true, true));
-            ++tests;
             this_thread::sleep_for(chrono::seconds(2));
         }
 
 
+        #ifdef LIMITATION
+        if(difftime(current_time,slow_timer) >= slowT && slow_int < maxTests)
+        #else
         if(difftime(current_time,slow_timer) >= slowT)
+        #endif
         {
             time(&slow_timer);
             threads.emplace_back(thread(trainArrival,TrainType::SLOW, false, true, false));
-            ++tests;
         }
 
         this_thread::sleep_for(chrono::seconds(1));
-    } while (tests < maxTests);
+        tests = fast_int + med_int + slow_int;
+    } while (tests < maxTests * 3);
 
     for (auto& th : threads)
     {
         if(th.joinable())
             th.join();
     }
-    
-
-    this_thread::sleep_for(chrono::seconds(10));
 
     return 0;
 }
