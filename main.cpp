@@ -50,9 +50,9 @@ int main(int argc, char const *argv[])
     int tests = 0;
     int maxTests = stoi(string(argv[2]));
 
-    int slowT = 50 * g_multiplier;
-    int medT = 90 * g_multiplier;
-    int fastT = 200 * g_multiplier;
+    int slowT = 30 * g_multiplier;
+    int medT = 50 * g_multiplier;
+    int fastT = 60 * g_multiplier;
 
     cout << "Trains to arrive: " << maxTests * 3 << ". Multiplier: " << g_multiplier << endl << endl;
     #ifdef PRIORITY
@@ -95,7 +95,7 @@ int main(int argc, char const *argv[])
         time(&current_time);
 
         time(&current_time);
-        #ifdef LIMITATION
+        #ifdef LIMITED
         if(difftime(current_time,fast_timer) >= fastT && fast_int < maxTests)
         #else
         if(difftime(current_time,fast_timer) >= fastT)
@@ -107,7 +107,7 @@ int main(int argc, char const *argv[])
         }
 
         time(&current_time);
-        #ifdef LIMITATION
+        #ifdef LIMITED
         if(difftime(current_time,med_timer) >= medT && med_int < maxTests)
         #else
         if(difftime(current_time,med_timer) >= medT)
@@ -119,7 +119,7 @@ int main(int argc, char const *argv[])
         }
 
 
-        #ifdef LIMITATION
+        #ifdef LIMITED
         if(difftime(current_time,slow_timer) >= slowT && slow_int < maxTests)
         #else
         if(difftime(current_time,slow_timer) >= slowT)
